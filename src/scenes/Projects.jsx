@@ -17,15 +17,21 @@ const Project = ({ title, description, githubUrl }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
         bg-gray z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`
     const projectTitle = title.split(" ").join("-").toLowerCase();
-    const handleClick = () => {
-        window.location.href = githubUrl; // ou githubUrl
+    const handleTestClick = () => {
+        window.location.href = testUrl; // ou githubUrl
+      };
+      const handleGithubClick = () => {
+        window.location.href =  githubUrl;
       };
     return (
         <motion.div variants={projectVariant} className="relative">
-            
             <div className={overlayStyles} onClick={handleClick}>
                 <p className="text-2xl font-playfair">{title}</p>
                 <p>{description}</p>
+                <div>
+                    <button onClick={handleTestClick}>Tester</button>
+                    <button onClick={handleGithubClick}>GitHub</button>
+                </div>
             </div>
             <img src={require(`../assets/${projectTitle}.png`)} alt={projectTitle} />
         </motion.div>
@@ -81,6 +87,7 @@ const Projects = () => {
                     <Project title="Connect Four" 
                         description="Puissance 4 réalisé en Javascript Vanilla, realisée en 1 semaine."
                         githubUrl="https://github.com/Melinda-EM/ConnectFour"
+                        testUrl="https://connect-four.netlify.app"
                     />
                     <Project title="Spotify" 
                         description="Spotify en React/Docker, réalisée en groupe de 4 personnes et sur un rush de 3 jours."
@@ -105,6 +112,7 @@ const Projects = () => {
                     <Project title="ToDo List" 
                         description="Création d'une todo list en javascript, fait durant une colle en 4 heures" 
                         githubUrl="https://github.com/Melinda-EM/Todo_list"
+                        testUrl="https://me-to-do-list.netlify.app"
                     />
                     <Project title="Site Photo" 
                         description="Mon premier site sur une de mes passions la photographie, HTML/CSS, réalisé en 4 jours"
