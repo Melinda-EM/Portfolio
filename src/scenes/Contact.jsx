@@ -90,6 +90,21 @@ const Contact = () => {
                             </p>
                         )}
                         <input
+                            className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+                            type="text"
+                            placeholder="PRENOM"
+                            {...register("firstname", {
+                                required: true,
+                                maxLength: 100,
+                            })}
+                        />
+                        {errors.firstname && (
+                            <p className="text-red mt-1">
+                                {errors.firstname.type === 'required' && "Ce champ est requis."}
+                                {errors.firstname.type === 'maxLength' && "La taille maximale est de 100 caractères"}
+                            </p>
+                        )}
+                        <input
                             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
                             type="text"
                             placeholder="EMAIL"
