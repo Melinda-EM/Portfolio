@@ -13,7 +13,7 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 }
 }
 
-const Project = ({ title, description, githubUrl }) => {
+const Project = ({ title, description, githubUrl, testUrl }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
         bg-gray z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`
     const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -25,12 +25,20 @@ const Project = ({ title, description, githubUrl }) => {
       };
     return (
         <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles} onClick={handleClick}>
+            <div className={overlayStyles} >
                 <p className="text-2xl font-playfair">{title}</p>
                 <p>{description}</p>
                 <div>
-                    <button onClick={handleTestClick}>Tester</button>
-                    <button onClick={handleGithubClick}>GitHub</button>
+                    {testUrl && (
+                        <button className="text-red p-4 font-semibold text-xl" onClick={handleTestClick}>
+                        Tester
+                        </button>
+                    )}
+                    {githubUrl && (
+                        <button className="text-blue font-semibold text-xl" onClick={handleGithubClick}>
+                        GitHub
+                        </button>
+                    )}
                 </div>
             </div>
             <img src={require(`../assets/${projectTitle}.png`)} alt={projectTitle} />
@@ -87,7 +95,7 @@ const Projects = () => {
                     <Project title="Connect Four" 
                         description="Puissance 4 réalisé en Javascript Vanilla, realisée en 1 semaine."
                         githubUrl="https://github.com/Melinda-EM/ConnectFour"
-                        testUrl="https://connect-four.netlify.app"
+                        testUrl="https://me-connect-four.netlify.app"
                     />
                     <Project title="Spotify" 
                         description="Spotify en React/Docker, réalisée en groupe de 4 personnes et sur un rush de 3 jours."
