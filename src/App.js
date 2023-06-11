@@ -16,6 +16,7 @@ function App() {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   useEffect(() => {
+    document.title = 'Mon portfolio';
     const handleScroll = () => {
       if (window.scrollY === 0) setIsTopOfPage(true);
       if (window.scrollY !== 0) setIsTopOfPage(false);
