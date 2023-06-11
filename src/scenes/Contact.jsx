@@ -90,7 +90,7 @@ const Contact = () => {
                             </p>
                         )}
                         <input
-                            className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+                            className="w-full bg-blue font-semibold placeholder-opaque-black mt-5 p-3"
                             type="text"
                             placeholder="PRENOM"
                             {...register("firstname", {

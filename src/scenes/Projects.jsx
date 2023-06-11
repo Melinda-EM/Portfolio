@@ -114,6 +114,7 @@ const Projects = () => {
                     <Project title="Maquette" 
                         description="Reproduction d'une maquette, en une semaine." 
                         githubUrl="https://github.com/Melinda-EM/Maquette"
+                        testUrl="me-maquette.netlify.app"
                     />
 
                     {/* ROW 3 */}
