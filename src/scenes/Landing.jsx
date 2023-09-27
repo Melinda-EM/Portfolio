@@ -9,7 +9,7 @@ const Landing = ({setSelectedPage}) => {
 
     return (
         <section id="home" 
-        className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+        className="md:flex md:justify-between md:items-center md:h-full gap-16 pt-36 pb-24"
         >
             {/* IMAGE SECTION */}
             <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
@@ -52,21 +52,20 @@ const Landing = ({setSelectedPage}) => {
                         <p className="text-6xl font-playfair z-10 text-center md:text-start">
                             Melinda
                             <span 
-                            className="xs:relative xs:text-deep-blue xs:font-semibold z-20
-                                xs:before:content-brush before:absolute before:-left-[30px]
-                                before:-top-[85px] before:z-[-1]"
+                            className="ml-5 xs:relative xs:text-deep-blue xs:font-semibold z-20
+                                xs:before:content-brush before:ml-2 before:absolute before:-left-[50px]
+                                before:-top-[135px] before:z-[-1]"
                             >
                                 Esteves
                             </span>
                         </p>
 
-                        <p className="mt-10 mb-7 text-md text-center md:text-start">
-                            Future Développeuse Web à la Web@cadémie by Epitech.. 
+                        <p className="mt-14 mb-10 text-xl text-center md:text-start">
+                            Développeuse Web en formation à la Web@cadémie by Epitech.
                             <br/>
-                            Je suis à la recherche d'une alternance à partir de 
-                            Septembre 2023 pour une durée de 14 mois, 
-                            <br/>
-                            rythme 3 semaines entreprise, 1 semaine école.
+                            Je suis à la recherche d'une alternance à partir d'octobre 2023 
+                            pour une durée de 14 mois, 
+                            rythme 3 semaines en entreprise, 1 semaine en formation.
                         </p>
                     </motion.div>
 
@@ -83,28 +82,28 @@ const Landing = ({setSelectedPage}) => {
                         }}
                     >
                         <AnchorLink
-                            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-                            hover:bg-blue hover:text-white transition duration-500"
+                            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-bold
+                            hover:bg-blue hover:text-white text-lg font-playfair transition duration-500"
                             onClick={() => setSelectedPage("contact")}
                             href="#contact"
                         >
                             Contactez-moi
                         </AnchorLink>
                         <AnchorLink
-                            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+                            className="rounded-r-sm bg-gradient-rainblue py-1 px-1"
                             onClick={() => setSelectedPage("contact")}
                             href="#project"
                         >
                             <div
                             className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center
-                            justify-center font-playfair px-10"
+                            justify-center font-playfair font-bold text-lg px-10"
                             >
                                 Projets
                             </div>    
                         </AnchorLink>
                         <a href={CV} download>
-                            <div className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-                            hover:bg-blue hover:text-white transition duration-500">
+                            <div className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-bold
+                            hover:bg-blue hover:text-white font-playfair text-lg transition duration-500">
                                 <div >
                                 Télécharger le CV
                                 </div>

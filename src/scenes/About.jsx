@@ -7,7 +7,7 @@ const About = () => {
     // before:-ml-[110px] before:left-1/2`
 
     return (
-        <section id="about" className="pt-32 pb-16">
+        <section id="about" className="pt-36 pb-24">
             {/* HEADING */}
             <motion.div
                 className="md:w-2/5 mx-auto text-center"
@@ -21,7 +21,7 @@ const About = () => {
                 }}
             >
                 <div>
-                    <p className="font-playfair font-semibold text-4xl">
+                    <p className="font-playfair font-semibold text-5xl">
                         <span className="text-red">A PRO</span>POS
                     </p>
                     <div className="flex justify-center mt-5">
@@ -29,22 +29,18 @@ const About = () => {
                     </div>
                 </div>
                 <div>
-            <p className="mt-10 mb-7">
+            <p className="mt-10 mb-7 text-lg">
                     Pour vous parler un peu de moi :
                     <br/>
                     Passionnée de jeux vidéos comme Call Of Duty, Final Fantasy,
                     <br/> Dead Or Alive ou encore 
                 Les Sims pour n'en citer que quelques uns.
-                <br /> J'ai décidé suite à une reconversion dans le milieu hôtellier de faire le
-                grand plongeon
-                <br />
-                <br/>
-                dans l'univers du Développement Web et j'ai entamée ma quête avec la formation
+                <br /> Après 3 ans dans milieu hôtellier, j'ai décidé de me reconvertir et de faire le
+                grand plongeon dans l'univers du Développement Web et j'ai entamée ma quête avec la formation
                 de la Web@cadémie by Epitech 
-                <br/>
                 pour étancher ma soif d'apprentissage et m'améliorer, si ce n'est
                 de me perfectionner dans ce domaine si vaste.
-                <br />
+                <br/>
                 Comme j'aime à dire, <i>Je ne suis pas là pour chasser des papillons</i>.
                 </p>
             </div>

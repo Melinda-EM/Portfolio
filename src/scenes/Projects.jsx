@@ -18,7 +18,7 @@ const Project = ({ title, description, githubUrl, testUrl }) => {
         bg-gray z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`
     const projectTitle = title.split(" ").join("-").toLowerCase();
     const handleTestClick = () => {
-        window.location.href = testUrl; // ou githubUrl
+        window.location.href = testUrl;
       };
       const handleGithubClick = () => {
         window.location.href =  githubUrl;
@@ -48,7 +48,7 @@ const Project = ({ title, description, githubUrl, testUrl }) => {
 
 const Projects = () => {
     return (
-        <section id="projects" className="pt-48 pb-48">
+        <section id="projects" className="pt-36 pb-24">
             {/* HEADING */}
             <motion.div
                 className="md:w-2/5 mx-auto text-center"
@@ -62,17 +62,16 @@ const Projects = () => {
                 }}
             >
                 <div>
-                    <p className="font-playfair font-semibold text-4xl">
+                    <p className="font-playfair font-semibold text-5xl">
                         <span className="text-red">PRO</span>JETS
                     </p>
                     <div className="flex justify-center mt-5">
                     <LineGradient width="w-2/3" />
                     </div>
                 </div>
-                    <p className="mt-10 mb-10">
-                    Vous pouvez observer, tester et vous renseigner sur certains de mes projets
-                    <br/>
-                    D'autres arriveront bientôt
+                    <p className="mt-10 mb-10 text-xl">
+                    Vous pouvez observer, tester et vous renseigner sur certains de mes projets.
+                    D'autres arriveront bientôt.
                     </p>
                 
             </motion.div>

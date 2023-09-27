@@ -17,7 +17,7 @@ const Contact = () => {
 }
 
     return (
-        <section id="contact" className="py-48">
+        <section id="contact" className="pt-36 pb-24">
             {/* HEADING */}
             <motion.div
                 className="flex justify-end w-full"
@@ -31,18 +31,18 @@ const Contact = () => {
                 }}
             >
                 <div>
-                <p className="font-playfair font-semibold text-4xl">
+                <p className="font-playfair font-semibold text-5xl">
                     <span className="text-yellow">CONTACTEZ-MOI</span>
                 </p>
                 <div className="flex md:justify-end my-5">
-                <LineGradient width="w-full" />
+                <LineGradient width="w-full"/>
                 </div>
-                <span>Une question, une demande de renseignement ?</span>
+                <span className="text-lg">Une question, une demande de renseignement ?</span>
                 </div>
             </motion.div>
 
             {/* FORM & IMAGES */}
-            <div className="md:flex md:justify-between gap-16 mt-5">
+            <div className="md:flex md:justify-between gap-16 mt-8">
                 <motion.div
                     className="basis-1/2 flex justify-center"
                     initial="hidden"
@@ -71,7 +71,7 @@ const Contact = () => {
                     <form
                         target="_blank"
                         onSubmit={onSubmit}
-                        action="https://formsubmit.co/55fd2b78917366eb178b1d6a404e40ad"
+                        action="https://formsubmit.co/esteves.melinda@outlook.fr"
                         method="POST"
                     >
                         <input

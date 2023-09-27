@@ -8,7 +8,7 @@ module.exports = {
         red: "#DA6BFF",
         yellow: "#FD8D81",
         gray: "#ededed",
-        "deep-blue": "#15084a",
+        "deep-blue": "#160836",
         "dark-gray": "#757575",
         "light-blue": "#5537D1",
         "opaque-black": "rgba(0, 0, 0, 0.35)",
@@ -20,7 +20,7 @@ module.exports = {
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
       fontFamily: {
-        playfair: ["Playfaire Display", "serif"],
+        playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
@@ -35,6 +35,7 @@ module.exports = {
       sm: "768px",
       md: "1060px"
     }
+
   },
   plugins: [],
 }
