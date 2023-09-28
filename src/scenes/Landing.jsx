@@ -82,8 +82,8 @@ const Landing = ({setSelectedPage}) => {
                         }}
                     >
                         <AnchorLink
-                            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-bold
-                            hover:bg-blue hover:text-white text-lg font-playfair transition duration-500"
+                            className="bg-gradient-rainblue text-deep-blue border-white border-2 rounded-sm py-3 px-4 font-bold
+                            hover:bg-blue hover:text-white text-md font-playfair transition duration-500"
                             onClick={() => setSelectedPage("contact")}
                             href="#contact"
                         >
@@ -96,14 +96,14 @@ const Landing = ({setSelectedPage}) => {
                         >
                             <div
                             className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center
-                            justify-center font-playfair font-bold text-lg px-10"
+                            justify-center font-playfair font-bold text-md px-5"
                             >
                                 Projets
                             </div>    
                         </AnchorLink>
                         <a href={CV} download>
-                            <div className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-bold
-                            hover:bg-blue hover:text-white font-playfair text-lg transition duration-500">
+                            <div className="bg-gradient-rainblue text-deep-blue border-white border-2 rounded-sm py-3 px-4 font-bold
+                            hover:bg-blue hover:text-white font-playfair text-md transition duration-500">
                                 <div >
                                 Télécharger le CV
                                 </div>

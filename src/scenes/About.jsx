@@ -29,20 +29,24 @@ const About = () => {
                     </div>
                 </div>
                 <div>
-            <p className="mt-10 mb-7 text-lg">
+            <p className="mt-10 mb-7 text-lg text-justify">
                     Pour vous parler un peu de moi :
                     <br/>
                     Passionnée de jeux vidéos comme Call Of Duty, Final Fantasy,
-                    <br/> Dead Or Alive ou encore 
-                Les Sims pour n'en citer que quelques uns.
-                <br /> Après 3 ans dans milieu hôtellier, j'ai décidé de me reconvertir et de faire le
+                     Dead Or Alive ou encore Les Sims pour n'en citer que quelques uns.
+                     J'aime aussi Stitch, c'est un peu mon animal spirituel et il m'accompagne dans chaque projet.
+                <br /> 
+                <br/>
+                Après 3 ans dans milieu hôtellier, j'ai décidé de me reconvertir et de faire le
                 grand plongeon dans l'univers du Développement Web et j'ai entamée ma quête avec la formation
-                de la Web@cadémie by Epitech 
-                pour étancher ma soif d'apprentissage et m'améliorer, si ce n'est
+                de la Web@cadémie by Epitech pour étancher ma soif d'apprentissage et m'améliorer, si ce n'est
                 de me perfectionner dans ce domaine si vaste.
                 <br/>
+                <br />
                 Comme j'aime à dire, <i>Je ne suis pas là pour chasser des papillons</i>.
-                </p>
+            </p>
+            <img src={require("../assets/dodo.gif")}
+                className="justify-left" alt="gif de Stitch"/>
             </div>
             </motion.div>
 
