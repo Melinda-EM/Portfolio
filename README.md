@@ -1,2 +1,3 @@
 # Portfolio
-Mon portfolio
+
+Voici mon portfolio réalisée en React JS et Tailwindcss.
