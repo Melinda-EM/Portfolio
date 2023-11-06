@@ -56,7 +56,7 @@ const MySkills = () => {
             </div>
 
             {/* SKILLS */}
-            <div className="md:flex md:justify-between mt-16 gap-32">
+            <div className="md:flex md:justify-between md:mt-10 gap-32">
                 
                 <motion.div
                     className="md:w-1/3 mt-10"
@@ -138,7 +138,7 @@ const MySkills = () => {
                         </div>
                         <p className="mt-5 text-lg">
                            Grâce à mes études dans l'art, j'ai une patte artistique
-                           qui m'aide et est un plus dans le monde du Developpement Web.
+                           qui m'aide et est un plus dans le monde du Web.
                            Cette liberté offerte me permet de créer des designs sobres mais colorés,
                            simple mais percutant.
                         </p>

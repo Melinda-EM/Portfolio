@@ -69,7 +69,7 @@ const Projects = () => {
                     <LineGradient width="w-2/3" />
                     </div>
                 </div>
-                    <p className="mt-10 mb-10 text-xl">
+                    <p className="mt-10 mb-16 text-xl">
                     Vous pouvez observer, tester et vous renseigner sur certains de mes projets.
                     D'autres arriveront bientôt.
                     </p>
@@ -79,7 +79,7 @@ const Projects = () => {
             {/* PROJECTS */}
             <div className="flex justify-center">
                 <motion.div
-                    className="sm:grid sm:grid-cols-3"
+                    className="sm:grid sm:grid-cols-3 sm:gap-3"
                     initial="hidden"
                     whileInView="visible"
                     view={{ once: true, amount: 0.5 }}
